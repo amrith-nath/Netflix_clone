@@ -22,8 +22,6 @@ class ScreenMainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: PreferredSize(
-            preferredSize: Size.fromHeight(50), child: AppBarWidget()),
         body: ValueListenableBuilder(
           valueListenable: indexChangeNotifier,
           builder: (BuildContext context, int index, _) {

@@ -1,7 +1,4 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:netflix/core/constants/constants.dart';
 
 class AppBarWidget extends StatelessWidget {
@@ -31,7 +28,11 @@ class AppBarWidget extends StatelessWidget {
         Container(
           height: 30,
           width: 30,
-          color: Colors.blue,
+          decoration: const BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(3)),
+              image: DecorationImage(
+                  image: AssetImage("assets/images/hero.jpg"),
+                  fit: BoxFit.cover)),
         ),
         kwidth,
       ],
