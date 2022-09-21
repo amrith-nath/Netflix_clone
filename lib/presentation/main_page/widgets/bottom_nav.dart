@@ -4,7 +4,7 @@ ValueNotifier<int> indexChangeNotifier = ValueNotifier(0);
 
 // ignore: must_be_immutable
 class BottomNavigationWidget extends StatelessWidget {
-  BottomNavigationWidget({Key? key}) : super(key: key);
+  const BottomNavigationWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

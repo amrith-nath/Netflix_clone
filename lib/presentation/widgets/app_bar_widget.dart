@@ -6,35 +6,40 @@ class AppBarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Column(
       children: [
-        kwidth,
-        const Text(
-          "Downloads",
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 30,
-          ),
+        kheight10,
+        Row(
+          children: [
+            kwidth,
+            const Text(
+              "Downloads",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 30,
+              ),
+            ),
+            // SizedBox(
+            //   child: Image.asset("assets/images/logoPNG.png"),
+            // ),
+            const Spacer(),
+            const Icon(
+              Icons.cast,
+              color: Colors.white,
+            ),
+            kwidth,
+            Container(
+              height: 30,
+              width: 30,
+              decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(3)),
+                  image: DecorationImage(
+                      image: AssetImage("assets/images/hero.jpg"),
+                      fit: BoxFit.cover)),
+            ),
+            kwidth,
+          ],
         ),
-        // SizedBox(
-        //   child: Image.asset("assets/images/logoPNG.png"),
-        // ),
-        const Spacer(),
-        const Icon(
-          Icons.cast,
-          color: Colors.white,
-        ),
-        kwidth,
-        Container(
-          height: 30,
-          width: 30,
-          decoration: const BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(3)),
-              image: DecorationImage(
-                  image: AssetImage("assets/images/hero.jpg"),
-                  fit: BoxFit.cover)),
-        ),
-        kwidth,
       ],
     );
   }

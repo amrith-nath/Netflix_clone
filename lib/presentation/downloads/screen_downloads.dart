@@ -5,6 +5,7 @@ import 'package:netflix/core/colors/colors.dart';
 import 'package:netflix/core/constants/constants.dart';
 
 import '../widgets/app_bar_widget.dart';
+import '../widgets/top_ten_widget.dart';
 
 class ScreenDownloads extends StatelessWidget {
   ScreenDownloads({Key? key}) : super(key: key);
@@ -22,7 +23,7 @@ class ScreenDownloads extends StatelessWidget {
           preferredSize: Size.fromHeight(50), child: AppBarWidget()),
       body: ListView.separated(
         separatorBuilder: (BuildContext context, int index) => const SizedBox(
-          height: 30,
+          height: 20,
         ),
         itemBuilder: (BuildContext context, int index) => listWidgets[index],
         itemCount: listWidgets.length,
@@ -231,46 +232,6 @@ class ImageContainerWidget extends StatelessWidget {
             topTen,
           ],
         ),
-      ),
-    );
-  }
-}
-
-class TopTenWidget extends StatelessWidget {
-  const TopTenWidget({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 40,
-      width: 30,
-      decoration: const BoxDecoration(
-          color: Colors.red,
-          borderRadius: BorderRadius.only(
-            bottomLeft: Radius.circular(5),
-            topRight: Radius.circular(8),
-          ),
-          boxShadow: [
-            BoxShadow(
-              offset: Offset(-2, 2),
-              color: Colors.black,
-              blurRadius: 5.0,
-            ),
-          ]),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
-          Text(
-            "TOP",
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 10),
-          ),
-          Text(
-            "10",
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-          ),
-        ],
       ),
     );
   }

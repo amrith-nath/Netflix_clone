@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:netflix/presentation/downloads/widgets/page_view_widget.dart';
+import 'package:netflix/presentation/fast_laughs/widgets/page_view_widget.dart';
 
 class ScreenFastLaughs extends StatelessWidget {
   const ScreenFastLaughs({Key? key}) : super(key: key);

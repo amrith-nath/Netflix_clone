@@ -5,14 +5,13 @@ import 'package:netflix/presentation/home/screen_home.dart';
 import 'package:netflix/presentation/main_page/widgets/bottom_nav.dart';
 import 'package:netflix/presentation/new_and_hot/screen_new_and_hot.dart';
 import 'package:netflix/presentation/search/screen_search.dart';
-import 'package:netflix/presentation/widgets/app_bar_widget.dart';
 
 class ScreenMainPage extends StatelessWidget {
   ScreenMainPage({Key? key}) : super(key: key);
 
-  List pages = [
+  final List pages = [
     const ScreenHome(),
-    const ScreenNewAndHot(),
+    ScreenNewAndHot(),
     const ScreenFastLaughs(),
     const ScreenSearch(),
     ScreenDownloads()
