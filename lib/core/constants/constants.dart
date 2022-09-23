@@ -11,3 +11,7 @@ const mainImage =
     'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fUdeneiMUQkE1Yb3Qx7dML0HVf.jpg';
 const newAndHotImage =
     'https://www.themoviedb.org/t/p/w533_and_h300_bestv2/aCaqCvYn48b3lfGKGnUdVAE1yeB.jpg';
+const comingSoonImage =
+    'https://www.themoviedb.org/t/p/w533_and_h300_bestv2/y3Y5INbgpttPTbgihgIa5mdUJqH.jpg';
+const movieLogoImage =
+    'https://tvseriesfinale.com/wp-content/uploads/2018/01/lost-in-space-768x427.png';
