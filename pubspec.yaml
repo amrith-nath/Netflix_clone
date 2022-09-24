@@ -12,10 +12,15 @@ dependencies:
   animate_do: ^2.1.0
   bordered_text: ^2.0.0
   cupertino_icons: ^1.0.2
+  dartz: ^0.10.1
+  dio: ^4.0.6
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.1
+  freezed_annotation: ^2.1.0
+  get_it: ^7.2.0
   google_fonts: ^3.0.1
+  injectable: ^1.5.3
   json_annotation: ^4.7.0
   json_serializable: ^6.4.0
   sticky_headers: null
@@ -26,7 +31,8 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
-  freezed: ^2.1.1
+  freezed:
+  injectable_generator:
 
 flutter:
   # The following line ensures that the Material Icons font is
