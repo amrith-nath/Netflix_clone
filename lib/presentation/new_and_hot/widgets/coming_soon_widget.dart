@@ -52,7 +52,7 @@ class ComingSoonWidget extends StatelessWidget {
               ),
             ),
             content: const SizedBox(
-              height: 450,
+              height: 400,
             ),
           ),
         ),
@@ -60,7 +60,7 @@ class ComingSoonWidget extends StatelessWidget {
           margin: const EdgeInsets.only(top: 10),
           // color: Colors.grey.shade900,
           width: size.width * 0.80,
-          height: 500,
+          height: 450,
           child: Center(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -129,7 +129,7 @@ class ComingSoonWidget extends StatelessWidget {
   }
 }
 
-Widget buildCommingSoon({required String text, required BuildContext context}) {
+Widget buildCommingSoon({required BuildContext context}) {
   return ListView.builder(
       itemCount: 10,
       itemBuilder: ((context, index) => ComingSoonWidget(
@@ -180,7 +180,7 @@ class NewAndHotImageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: size.width * 0.85,
-      height: 220,
+      height: 180,
       decoration: BoxDecoration(
           color: whiteColor,
           image:

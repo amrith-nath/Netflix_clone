@@ -34,17 +34,17 @@ mixin _$DownloadsEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_getDownloadsImage value) getDownloadsImage,
+    required TResult Function(GetDownloadsImage value) getDownloadsImage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_getDownloadsImage value)? getDownloadsImage,
+    TResult Function(GetDownloadsImage value)? getDownloadsImage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_getDownloadsImage value)? getDownloadsImage,
+    TResult Function(GetDownloadsImage value)? getDownloadsImage,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -68,28 +68,28 @@ class _$DownloadsEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$$_getDownloadsImageCopyWith<$Res> {
-  factory _$$_getDownloadsImageCopyWith(_$_getDownloadsImage value,
-          $Res Function(_$_getDownloadsImage) then) =
-      __$$_getDownloadsImageCopyWithImpl<$Res>;
+abstract class _$$GetDownloadsImageCopyWith<$Res> {
+  factory _$$GetDownloadsImageCopyWith(
+          _$GetDownloadsImage value, $Res Function(_$GetDownloadsImage) then) =
+      __$$GetDownloadsImageCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_getDownloadsImageCopyWithImpl<$Res>
+class __$$GetDownloadsImageCopyWithImpl<$Res>
     extends _$DownloadsEventCopyWithImpl<$Res>
-    implements _$$_getDownloadsImageCopyWith<$Res> {
-  __$$_getDownloadsImageCopyWithImpl(
-      _$_getDownloadsImage _value, $Res Function(_$_getDownloadsImage) _then)
-      : super(_value, (v) => _then(v as _$_getDownloadsImage));
+    implements _$$GetDownloadsImageCopyWith<$Res> {
+  __$$GetDownloadsImageCopyWithImpl(
+      _$GetDownloadsImage _value, $Res Function(_$GetDownloadsImage) _then)
+      : super(_value, (v) => _then(v as _$GetDownloadsImage));
 
   @override
-  _$_getDownloadsImage get _value => super._value as _$_getDownloadsImage;
+  _$GetDownloadsImage get _value => super._value as _$GetDownloadsImage;
 }
 
 /// @nodoc
 
-class _$_getDownloadsImage implements _getDownloadsImage {
-  const _$_getDownloadsImage();
+class _$GetDownloadsImage implements GetDownloadsImage {
+  const _$GetDownloadsImage();
 
   @override
   String toString() {
@@ -99,7 +99,7 @@ class _$_getDownloadsImage implements _getDownloadsImage {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_getDownloadsImage);
+        (other.runtimeType == runtimeType && other is _$GetDownloadsImage);
   }
 
   @override
@@ -136,7 +136,7 @@ class _$_getDownloadsImage implements _getDownloadsImage {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_getDownloadsImage value) getDownloadsImage,
+    required TResult Function(GetDownloadsImage value) getDownloadsImage,
   }) {
     return getDownloadsImage(this);
   }
@@ -144,7 +144,7 @@ class _$_getDownloadsImage implements _getDownloadsImage {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_getDownloadsImage value)? getDownloadsImage,
+    TResult Function(GetDownloadsImage value)? getDownloadsImage,
   }) {
     return getDownloadsImage?.call(this);
   }
@@ -152,7 +152,7 @@ class _$_getDownloadsImage implements _getDownloadsImage {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_getDownloadsImage value)? getDownloadsImage,
+    TResult Function(GetDownloadsImage value)? getDownloadsImage,
     required TResult orElse(),
   }) {
     if (getDownloadsImage != null) {
@@ -162,8 +162,8 @@ class _$_getDownloadsImage implements _getDownloadsImage {
   }
 }
 
-abstract class _getDownloadsImage implements DownloadsEvent {
-  const factory _getDownloadsImage() = _$_getDownloadsImage;
+abstract class GetDownloadsImage implements DownloadsEvent {
+  const factory GetDownloadsImage() = _$GetDownloadsImage;
 }
 
 /// @nodoc
@@ -277,7 +277,7 @@ class __$$_DownloadStateCopyWithImpl<$Res>
 class _$_DownloadState implements _DownloadState {
   const _$_DownloadState(
       {required this.isLoading,
-      final List<Downloads>? downloads,
+      required final List<Downloads>? downloads,
       required this.downloadsFailureOrSuccessOption})
       : _downloads = downloads;
 
@@ -330,7 +330,7 @@ class _$_DownloadState implements _DownloadState {
 abstract class _DownloadState implements DownloadState {
   const factory _DownloadState(
       {required final bool isLoading,
-      final List<Downloads>? downloads,
+      required final List<Downloads>? downloads,
       required final Option<Either<MainFailures, List<Downloads>>>
           downloadsFailureOrSuccessOption}) = _$_DownloadState;
 
