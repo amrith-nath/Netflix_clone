@@ -65,7 +65,7 @@ class ScreenNewAndHot extends StatelessWidget {
         ),
         body: TabBarView(
           children: [
-            buildCommingSoon(text: "tab 1", context: context),
+            buildCommingSoon(context: context),
             const EveryOnesWatchingWidget(
               text: "tab 2",
             )
